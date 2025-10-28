@@ -3,15 +3,15 @@ def kilometers_to_miles(kilometers):
 
 
 def miles_to_kilometers(miles):
-    return miles * 1.60934, 2
+    return miles * 1.60934
 
 
 def kg_to_pounds(kg):
-    return kg * 2.20462, 2
+    return kg * 2.20462
 
 
 def pounds_to_kg(pounds):
-    return pounds / 2.20462, 2
+    return pounds / 2.20462
 
 
 def celsius_to_fahrenheit(celsius):
