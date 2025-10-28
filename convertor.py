@@ -8,3 +8,7 @@ def miles_to_kilometers(miles):
 
 def kg_to_pounds(kg):
     return kg * 2.20462
+
+
+def pounds_to_kg(pounds):
+    return pounds / 2.20462
