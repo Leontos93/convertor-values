@@ -14,9 +14,26 @@ def pounds_to_kg(pounds):
     return round(pounds / 2.20462, 2)
 
 
-def celsium_to_fahrenheit(celsius):
+def celsius_to_fahrenheit(celsius):
     return round(((celsius * 9 / 5) + 32), 2)
 
 
-def fahrenheit_to_celsium(fahrenheit):
+def fahrenheit_to_celsius(fahrenheit):
     return round(((fahrenheit - 32) * 5 / 9), 2)
+
+
+def main():
+    while True:
+        print("\n--- Converter Menu ---")
+        print("--- Length ---")
+        print("1: Kilometers -> Miles")
+        print("2: Miles -> Kilometers")
+        print("--- Weight ---")
+        print("3: Kilograms -> Pounds")
+        print("4: Pounds -> Kilograms")
+        print("---Temperature---")
+        print("5: Celsius -> Fahrenheit")
+        print("6: Fahrenheit -> Celsius")
+        print("7: Exit")
+
+        choice = input("Make your choice: ")
