@@ -12,3 +12,11 @@ def kg_to_pounds(kg):
 
 def pounds_to_kg(pounds):
     return pounds / 2.20462
+
+
+def celsium_to_fahrenheit(celsius):
+    return round(((celsius * 9 / 5) + 32), 2)
+
+
+def fahrenheit_to_celsium(fahrenheit):
+    return round(((fahrenheit - 32) * 5 / 9), 2)
