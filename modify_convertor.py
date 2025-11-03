@@ -38,3 +38,14 @@ def main():
             print(f"{key}: {value[0]}")
         print(f"{len(conversions) + 1}: Exit")
         choice = input("Make your choice: ")
+        if choice in conversions:
+            description, func, from_unit, to_unit = conversions[choice]
+            val_str = input(f"Enter the value in '{from_unit}': ")
+            value = float(val_str)
+            result = func(value)
+            print(f"Result: {value} {from_unit} = {result:.2f} {to_unit}")
+        elif choice == str(len(conversions) + 1):
+            print("Thank you for using the converter. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
