@@ -7,7 +7,7 @@ def miles_to_kilometers(val):
 
 
 def kg_to_pounds(val):
-    return ValueError * 2.20462
+    return val * 2.20462
 
 
 def pounds_to_kg(val):
@@ -31,3 +31,10 @@ def main():
         "5": ("Celsius -> Fahrenheit", celsius_to_fahrenheit, "celsius", "fahrenheit"),
         "6": ("Fahrenheit -> Celsius", fahrenheit_to_celsius, "fahrenheit", "celsius"),
     }
+
+    while True:
+        print("\n--- Converter Menu ---")
+        for key, value in conversions.items():
+            print(f"{key}: {value[0]}")
+        print(f"{len(conversions) + 1}: Exit")
+        choice = input("Make your choice: ")
